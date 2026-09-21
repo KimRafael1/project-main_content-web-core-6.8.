@@ -60,11 +60,10 @@ main {
   width: 100%;
 }
 
-.main-menu-chaild {
-  flex-shrink: 0; 
-  display: flex;
-  align-items: center;
-  width: 100%;
+
+
+.main-menu-chaild::-webkit-scrollbar {
+  height: 0;
 }
 
 .title {
@@ -74,7 +73,10 @@ main {
 
 .title-wrap {
   display: flex;
+  gap: 10px;
 }
+
+
 
 
 .title-wrap-element{
@@ -92,30 +94,29 @@ main {
 
 
 nav {
-  display: flex;
-  background-color: #f8f8f8;
-  white-space: nowrap;
-  overflow-x: auto; 
-  overflow-y: hidden;
-  width: auto;  
-  height: auto;
-  font-size: 16px;
-  color: #7e7e82;
-  margin: 13px 0 11px 0; 
-  padding-left: 20px;
+    width: 100%;
+    overflow: hidden;
 }
 
-nav::-webkit-scrollbar {
+.main-menu-chaild {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.main-menu-chaild:-webkit-scrollbar {
   display: none;
   width: 0;
   height: 0;
 }
 
 .nav-menu-chaild {
-  width: 100%;
-  height: 50px;
-  display: inline-block;
-  justify-content: space-between;
+    flex-shrink: 0;
+    width: auto;
 }
 
 .main-text-tablet {
@@ -141,8 +142,8 @@ input:focus {
 }
 
 .nav-text {
-  padding: 13px 10px 0px 14px;
-  
+  display: flex;
+  padding: 15px 20px 20px ;
 }
 
 .main-text {
@@ -208,8 +209,7 @@ input:focus {
 }
 
 .nav-menu-chaild {
-  margin-left: 40px;
- 
+  margin-left: 30px;
 }
 
 .top-bar-right {
@@ -228,6 +228,10 @@ input:focus {
     width: 820px;
     height: auto;
   }
+
+  .nav-menu-chaild {
+  margin-left: 80px;
+}
 
   .top-bar {
     display: none;
