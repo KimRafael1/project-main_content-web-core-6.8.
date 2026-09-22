@@ -48,11 +48,18 @@ body {
   height: 32px;
 }
 
+.header__review {
+  display: none;
+  margin: 10px 0 0 20px;
+  font-size: 19px;
+  color: #7E7E82;
+}
+
 main {
   width: 100%;
 }
 
-.main-menu-chaild::-webkit-scrollbar {
+.menu__navigation::-webkit-scrollbar {
   height: 0;
 }
 
@@ -80,9 +87,14 @@ main {
   gap: 30px;
 }
 
+.main__text-phone{
+  margin: 15px 0 0 20px;
+  color: #1B1C21  ;
+
+}
 
 
-.main-menu-chaild {
+.menu__navigation {
     display: flex;
     align-items: center;
     width: 100%;
@@ -92,19 +104,10 @@ main {
     padding-left: 20px;
 }
 
-.main-menu-chaild:-webkit-scrollbar {
-  display: none;
-  width: 0;
-  height: 0;
-}
 
-.nav-menu-chaild {
-    flex-shrink: 0;
-    width: auto;
-}
-
-.main-text-tablet {
+.main__text-tablet {
   display: none;
+  margin: 20px;
 }
 
 .main-nav-pc {
@@ -125,20 +128,24 @@ input:focus {
   outline: none; 
 }
 
-.nav-text {
+.navigation__text {
+  color: #7E7E82;
   display: flex;
   padding: 15px 20px 20px ;
+  flex-shrink: 0;
+  width: auto;
 }
 
-.main-text {
-  color: #1b1c21;
-  margin: 15px 0 0 20px;
+.main__content {
   line-height: 18px;
+  margin-right: 20px;
 }
 
-.main-title {
+.main__button{
   margin: 15px 0 15px 0;
   display: flex;
+  margin: 15px;
+  align-items: center;
 }
 
 .main-title-text {
@@ -146,11 +153,11 @@ input:focus {
   font-size: 20px;
 }
 
-.main-title-arrow { 
+.main__arrow { 
   width: 24px;
 }
 
-.main-img {
+.main__picture {
   width: 100%;
   
 }
@@ -158,19 +165,21 @@ input:focus {
 
 @media (min-width: 769px) {
   main {
-    padding-right:20px;
   }
 
-  .main-loc{
+  .main__content {
     display: flex;
+    margin-top: 15px;
   }
 
-  .main-img {
+  .main__picture {
      min-width: 360px;
      flex-shrink: 0;
+     border-radius: 10px;
+     margin-right: ;
   }
 
-  .main-loc > div:last-child {
+  .main__content > div:last-child {
     flex: 1 1 auto;
   }
 
@@ -178,7 +187,7 @@ input:focus {
     margin: 20px 30px 0 14px;
   }
   
-  .main-text-tablet {
+  .main__text-tablet {
     margin-top: 25px;
     display: block;
   }
@@ -206,12 +215,13 @@ input:focus {
     padding-right:20px;
   }
 
-  .main-img {
+  .main__picture {
     width: 820px;
     height: auto;
+  
   }
 
-  .nav-menu-chaild {
+  .navigation__text {
   margin-left: 80px;
 }
 
@@ -219,9 +229,13 @@ input:focus {
     display: none;
   }
 
- body {
-  padding-top: 50px;
- }
+  .header__review {
+    display: block;
+  }
+
+body {
+  padding-top: 25px;
+}
 
  .main__service-computer{
   display: flex;
@@ -235,8 +249,13 @@ input:focus {
   gap: 10px;
 }
 
-.main-text-tablet::after {
+.main__text-tablet::after {
   content: "что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким."
+
+}
+
+.main__content-text {
+  margin: 0 70px 0 0;
 
 }
 
