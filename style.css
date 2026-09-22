@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
 }
 
-.top-bar,header{
+.header__menu{
   background-color: #ffffff;
   width: 100%;
   height: 88px;
@@ -17,11 +17,18 @@ body {
   align-items: center;
 }
 
-.top-bar-tablet {
+.element-positioning {
+  display: flex;
+  margin: 5px;
+  gap: 14px ;
+  align-items: center;
+}
+
+.header__right-tablet {
   display: none;
 }
 
-.top-bar-line-tablet {
+.header__line-tablet {
   display: none;
   background-color: #EAEAEA;
   width: 2px;
@@ -29,28 +36,13 @@ body {
   margin-top: 8px;
 }
 
-.top-bar-menu {
+.header__right {
   justify-content: flex-end;
   display: flex;
   flex-grow: 1; 
-  align-items: center; 
-  gap: 15px;
 }
 
-.top-bar-right {
-  display: flex;
-  gap: 10px;
-}
-
-
-header {
-  flex-grow: 1;    
-  padding: 0 1rem;
-  margin: 0 1rem;
-  gap: 16px;
-}
-
-.top-bar-line {
+.header__line {
   background-color: #EAEAEA;
   width: 2px;
   height: 32px;
@@ -60,26 +52,22 @@ main {
   width: 100%;
 }
 
-
-
 .main-menu-chaild::-webkit-scrollbar {
   height: 0;
 }
 
-.title {
+.main__service {
+  margin: 20px 0 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.title-wrap {
+.main__service-title {
   display: flex;
-  gap: 10px;
+  gap: 13px;
 }
 
-
-
-
-.title-wrap-element{
+.main__service-strip {
   background-color: #41F6D7;
   width: 4px;
   height: 40px;
@@ -87,16 +75,12 @@ main {
   border-bottom-right-radius: 12px;
 }
 
-.title-wrap-service {
+.main__service-computer {
   display: none;
   gap: 30px;
 }
 
 
-nav {
-    width: 100%;
-    overflow: hidden;
-}
 
 .main-menu-chaild {
     display: flex;
@@ -199,12 +183,9 @@ input:focus {
     display: block;
   }
 
-  .top-bar-tablet {
-  display: flex;
-  gap: 20px;
-}
+  
 
-.top-bar-line-tablet {
+.header__line-tablet {
   display: block;
 }
 
@@ -212,12 +193,13 @@ input:focus {
   margin-left: 30px;
 }
 
-.top-bar-right {
+.header__right-tablet {
   display: flex;
   gap: 15px;
 }
-  
+ 
 }
+
 
 @media (min-width: 1120px) {
   main {
@@ -233,7 +215,7 @@ input:focus {
   margin-left: 80px;
 }
 
-  .top-bar {
+  .header__menu{
     display: none;
   }
 
@@ -241,7 +223,7 @@ input:focus {
   padding-top: 50px;
  }
 
- .title-wrap-service {
+ .main__service-computer{
   display: flex;
   gap: 30px;
 }
@@ -253,13 +235,10 @@ input:focus {
   gap: 10px;
 }
 
+.main-text-tablet::after {
+  content: "что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким."
 
-
-
-  .main-text-tablet::after {
-    content: "что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким."
-
-  }
+}
 
   
 }
