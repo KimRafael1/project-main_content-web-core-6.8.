@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
 }
 
-.header__menu{
+.header__menu {
   background-color: #ffffff;
   width: 100%;
   height: 88px;
@@ -59,9 +59,9 @@ main {
   width: 100%;
 }
 
-.menu__navigation::-webkit-scrollbar {
-  height: 0;
-}
+  .menu__navigation::-webkit-scrollbar {
+    height: 0;
+  } 
 
 .main__service {
   margin: 20px 0 10px;
@@ -97,7 +97,7 @@ main {
 .menu__navigation {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 100%;  
     overflow-x: auto;
     overflow-y: hidden;
     gap: 5px;
@@ -105,7 +105,7 @@ main {
 }
 
 input::placeholder {
-    text-align: center;
+  text-align: center;
 }
 
 .main__text-tablet {
@@ -131,7 +131,7 @@ input:focus {
   outline: none; 
 }
 
-.navigation__text {
+.menu__text {
   color: #7E7E82;
   display: flex;
   padding: 15px 20px 20px ;
@@ -157,7 +157,7 @@ input:focus {
 }
 
 .main__arrow { 
-  width: 24px;
+  
 }
 
 .main__picture {
@@ -179,7 +179,6 @@ input:focus {
      min-width: 360px;
      flex-shrink: 0;
      border-radius: 10px;
-     margin-right: ;
   }
 
   .main__content > div:last-child {
@@ -201,7 +200,7 @@ input:focus {
   display: block;
 }
 
-.nav-menu-chaild {
+.menu__text{
   margin-left: 30px;
 }
 
@@ -224,7 +223,7 @@ input:focus {
   
   }
 
-  .navigation__text {
+  .menu__text{
   margin-left: 80px;
 }
 
